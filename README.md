@@ -69,7 +69,7 @@ To reload the whole system:
 
 When working on a function :  
 - compile function: `C-c C-c`  
-- compile buffer: `C-c C-k`  
+- compile buffer: `C-c C-k` (probably to be avoided with ASDF project, since it creates a `fasl` file next to `lisp` file, with a risk of confusion)  
 - send function to REPL, ready to be executed: `C-c C-y`  
 - switch between source and test file: `C-c d s` (custom function defined in my [Emacs configuration file](https://github.com/occisn/emacs-config) accessible via hydra)  
 - jump to asd file: `C-c d a` (custom function defined in my [Emacs configuration file](https://github.com/occisn/emacs-config) accessible via hydra)
