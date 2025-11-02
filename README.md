@@ -19,14 +19,14 @@ Verification: the below instructions in Common Lisp REPL shall yield no error.
 
 ## Load system
 
-In Common Lisp REPL, use one of the following instructions:
+To load system from Common Lisp REPL, use one of the following instructions:
 ```
 ,load-system [cl-my-project]
 (asdf:load-system :cl-my-project)
 (ql:quickload :cl-my-project)
 ```
 
-It could be smarter to load tests system, which also force loading of main system:
+At the beginning of the work session, it could be smarter to load tests system, which also force loading of main system:
 ```
 ,load-system [cl-my-project-tests]
 (asdf:load-system :cl-my-project-tests)
@@ -47,7 +47,7 @@ Function `double` is not exported so two `:` are necessary:
 
 ## Tests
 
-In Common Lisp REPL, use one of the following instructions:
+To test system from Common Lisp REPL, use one of the following instructions:
 ```
 ,test-system [cl-my-project]
 (asdf:test-system :cl-my-project)
@@ -61,19 +61,6 @@ For a specfic test:
 
 ## Development workflow
 
-To reload the whole system:
-```
-(asdf:load-system :cl-my-project :force t)
-,force-load-system [cl-my-project]
-```
-
-When working on a function :  
-- compile function: `C-c C-c`  
-- compile buffer: `C-c C-k` (probably to be avoided with ASDF project, since it creates a `fasl` file next to `lisp` file, with a risk of confusion)  
-- send function to REPL, ready to be executed: `C-c C-y`  
-- switch between source and test file: `C-c d s` (custom function defined in my [Emacs configuration file](https://github.com/occisn/emacs-config) accessible via hydra)  
-- jump to asd file: `C-c d a` (custom function defined in my [Emacs configuration file](https://github.com/occisn/emacs-config) accessible via hydra)
-
-... and test this specific function: `C-c SPC` (custom function defined in my [Emacs configuration file](https://github.com/occisn/emacs-config)) will create relevant instructions in REPL, ready to be executed.
+See [cl-utils repository](https://github.com/occisn/cl-utils)
 
 (end of README)
