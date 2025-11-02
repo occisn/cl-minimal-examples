@@ -1,4 +1,4 @@
-# cl-asdf-example
+# cl-minimal-asdf-example
 
 Minimal example of Common Lisp project relying on [ASDF](https://asdf.common-lisp.dev/).
 
