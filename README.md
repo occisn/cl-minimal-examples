@@ -59,8 +59,4 @@ For a specfic test:
 (parachute:test 'cl-my-project-tests::test-triple)
 ```
 
-## Development workflow
-
-See [cl-utils repository](https://github.com/occisn/cl-utils)
-
 (end of README)
