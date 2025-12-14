@@ -1,4 +1,4 @@
-(in-package :cl-my-project)
+(in-package :cl-my-project2)
 
 (defun double (x)
   (* 2 x))

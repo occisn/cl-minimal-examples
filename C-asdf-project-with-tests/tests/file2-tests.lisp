@@ -1,4 +1,4 @@
-(in-package :cl-my-project-tests)
+(in-package :cl-my-project2-tests)
 
 (parachute:define-test test-double
   (parachute:is

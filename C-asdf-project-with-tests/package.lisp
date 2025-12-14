@@ -1,4 +1,4 @@
-(defpackage cl-my-project
+(defpackage cl-my-project2
   (:use cl)
   (:export
    triple

@@ -1,7 +1,7 @@
 
 
-(asdf:defsystem "cl-my-project"
-  :name "cl-my-project"
+(asdf:defsystem "cl-my-project2"
+  :name "cl-my-project2"
   :version "0.1.1"
   :author "John Doe"
   :licence "MIT"
@@ -20,5 +20,5 @@
                 :components
                 ((:file "file1")
                  (:file "file2"))))
-  :in-order-to ((asdf:test-op (asdf:test-op :cl-my-project-tests))))
+  :in-order-to ((asdf:test-op (asdf:test-op :cl-my-project2-tests))))
 
