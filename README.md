@@ -1,8 +1,10 @@
-# cl-minimal-asdf-example
+# cl-minimal-examples
 
-Minimal example of Common Lisp project relying on [ASDF](https://asdf.common-lisp.dev/).
+xxx
 
-## Register project in ASDF
+## About the example relying on relying on [ASDF](https://asdf.common-lisp.dev/).
+
+### Register project in ASDF
 
 In Common Lisp REPL:
 ```
@@ -17,7 +19,7 @@ Verification: the below instructions in Common Lisp REPL shall yield no error.
 (asdf:find-system :cl-my-project-tests)
 ```
 
-## Load system
+### Load system
 
 To load system from Common Lisp REPL, use one of the following instructions:
 ```
@@ -33,7 +35,7 @@ At the beginning of the work session, it could be smarter to load tests system, 
 (ql:quickload :cl-my-project-tests)
 ``` 
 
-## Execute function
+### Execute function
 
 In Common Lisp REPL:
 ```
@@ -45,7 +47,7 @@ Function `double` is not exported so two `:` are necessary:
 (cl-my-project::double 2)
 ```
 
-## Tests
+### Tests
 
 To test system from Common Lisp REPL, use one of the following instructions:
 ```
