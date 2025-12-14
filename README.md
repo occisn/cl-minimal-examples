@@ -1,6 +1,9 @@
 # cl-minimal-examples
 
-
+Three minimal Common Lisp projects:  
+A. one-file program  
+B. ASDF project without test  
+C. ASDF project with tests
 
 ## About the example relying on relying on [ASDF](https://asdf.common-lisp.dev/) with tests.
 
