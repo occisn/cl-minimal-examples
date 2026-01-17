@@ -9,4 +9,4 @@
                                   (funcall next))
                 :components ((:file "package-tests")
                              (:file "file2-tests"))))
-  :perform (asdf:test-op (op c) (uiop:symbol-call :parachute :test  :cl-my-project2-tests)))
+  :perform (asdf:test-op (op c) (uiop:symbol-call :parachute :test :cl-project-tests)))

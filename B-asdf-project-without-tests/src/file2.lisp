@@ -1,4 +1,4 @@
-(in-package :cl-my-project1)
+(in-package cl-project)
 
 (defun double (x)
   (* 2 x))
@@ -6,7 +6,7 @@
 (defun triple (x)
   (* 3 x))
 
-(defun start ()
+(defun main ()
   (format t "Hello world!~%"))
 
 ;;; end

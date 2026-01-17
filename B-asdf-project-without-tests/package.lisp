@@ -1,8 +1,8 @@
-(defpackage cl-my-project1
+(defpackage cl-project
   (:use cl)
   (:export
    triple
    nb-of-processors
-   start))
+   main))
 
 ;; end

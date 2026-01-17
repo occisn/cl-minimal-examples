@@ -1,4 +1,4 @@
-(in-package :cl-my-project1)
+(in-package cl-project)
 
 (cffi:defctype dword :unsigned-long)
 
