@@ -48,9 +48,13 @@
     (cffi:foreign-slot-value info '(:struct system-info)
                              'number-of-processors)))
 
-(defun double (x) (* x 2))
+(defun double (x)
+  "Return twice the value of X."
+  (declare (type fixnum x))
+  (* x 2))
 
 (defun main ()
+  "Entry point displaying demo output."
   (format t "Hello world!~%")
   (format t "Double of 3 is ~a.~%" (double 3))
   (format t "Number of processors is ~a.~%" (nb-of-processors)))
