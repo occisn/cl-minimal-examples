@@ -1,10 +1,10 @@
 ;;; C-c C-k to compile file 
 
-(eval-when (:compile-toplevel)
+(eval-when (:compile-toplevel :load-toplevel :execute)
   (ql:quickload :cffi))
 
 (defpackage my-page
-  (:use :cl :cffi)
+  (:use :cl) ; avoid :cffi here in order not to pollute names
   (:export
    nb-of-processors))
 
